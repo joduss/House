@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>At home · 360° tour</title>
+  <link rel="stylesheet" href="vendor/pannellum.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="panorama" aria-label="Interactive panoramic view"></main>
+
+  <header>
+    <div class="eyebrow">360° TOUR <span>BEST</span></div>
+    <h1 id="view-title">At home</h1>
+    <p id="view-meta">Drag to look around · Scroll or pinch to zoom</p>
+  </header>
+
+  <div class="browser" aria-label="Scene and image pickers">
+    <div class="field" hidden>
+      <label for="scene-select">Scene</label>
+      <select id="scene-select" disabled></select>
+    </div>
+    <div class="field">
+      <label for="image-select">Image</label>
+      <select id="image-select" disabled></select>
+    </div>
+  </div>
+
+  <div class="tools" aria-label="View controls">
+    <button id="zoom-in" aria-label="Zoom in" title="Zoom in">+</button>
+    <button id="zoom-out" aria-label="Zoom out" title="Zoom out">−</button>
+    <button id="reset" title="Reset view" aria-label="Reset view">↺</button>
+    <button id="fullscreen" title="Full screen" aria-label="Full screen">⛶</button>
+  </div>
+
+  <div id="status" role="status" aria-live="polite">Loading scenes…</div>
+
+  <script src="vendor/pannellum.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
